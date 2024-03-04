@@ -1,0 +1,179 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+
+<head>
+<title>publications.bib</title>
+</head>
+
+<body>
+<h1>publications.bib</h1><a name="stolze2021composable"></a><pre>
+@inproceedings{<a href="publications.html#stolze2021composable">stolze2021composable</a>,
+  author = {Stolze, Claude and Miculan, Marino and Di Gianantonio, Pietro},
+  title = {Composable Partial Multiparty Session Types},
+  booktitle = {International Conference on Formal Aspects of Component Software, FACS 2021},
+  pages = {44--62},
+  year = 2021,
+  month = oct,
+  abstract = {We introduce partial sessions and partial (multiparty) session types, in order to deal with open systems, i.e., systems with missing components. Partial sessions can be composed, and the type of the resulting system is derived from those of its components without knowing any suitable global type nor the types of missing parts. Incompatible types, due to e.g. miscommunications or deadlocks, are detected at the merging phase. We apply these types to a process calculus, for which we prove subject reduction and progress, so that well-typed systems never violate the prescribed constraints. Therefore, partial session types support the development of systems by incremental assembling of components.},
+  url = {https://link.springer.com/chapter/10.1007/978-3-030-90636-8_3},
+  doi = {10.1007/978-3-030-90636-8_3},
+  pdf = {https://users.dimi.uniud.it/~claude.stolze/FACS21.pdf},
+  organization = {Springer}
+}
+</pre>
+
+<a name="DBLP:conf/fscd/StolzeL20"></a><pre>
+@inproceedings{<a href="publications.html#DBLP:conf/fscd/StolzeL20">DBLP:conf/fscd/StolzeL20</a>,
+  author = {Claude Stolze and
+               Luigi Liquori},
+  editor = {Zena M. Ariola},
+  title = {A Type Checker for a Logical Framework with Union and Intersection
+               Types (System Description)},
+  booktitle = {5th International Conference on Formal Structures for Computation
+               and Deduction, {FSCD} 2020, June 29-July 6, 2020, Paris, France (Virtual
+               Conference)},
+  series = {LIPIcs},
+  volume = {167},
+  pages = {37:1--37:24},
+  publisher = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik},
+  year = {2020},
+  abstract = {We present the syntax, semantics, typing, subtyping, unification, refinement, and REPL of Bull, a prototype theorem prover based on the Delta-Framework, i.e. a fully-typed Logical Framework à la Edinburgh LF decorated with union and intersection types, as described in previous papers by the authors. Bull also implements a subtyping algorithm for the Type Theory Xi of Barbanera-Dezani-de’Liguoro. Bull has a command-line interface where the user can declare axioms, terms, and perform computations and some basic terminal-style features like error pretty-printing, subexpressions highlighting, and file loading. Moreover, it can typecheck a proof or normalize it. These terms can be incomplete, therefore the typechecking algorithm uses unification to try to construct the missing subterms. Bull uses the syntax of Berardi’s Pure Type Systems to improve the compactness and the modularity of the kernel. Abstract and concrete syntax are mostly aligned and similar to the concrete syntax of Coq. Bull uses a higher-order unification algorithm for terms, while typechecking and partial type inference are done by a bidirectional refinement algorithm, similar to the one found in Matita and Beluga. The refinement can be split into two parts: the essence refinement and the typing refinement. Binders are implemented using commonly-used de Bruijn indices. We have defined a concrete language syntax that will allow user to write Delta-terms. We have defined the reduction rules and an evaluator. We have implemented from scratch a refiner which does partial typechecking and type reconstruction. We have experimented Bull with classical examples of the intersection and union literature, such as the ones formalized by Pfenning with his Refinement Types in LF and by Pierce. We hope that this research vein could be useful to experiment, in a proof theoretical setting, forms of polymorphism alternatives to Girard’s parametric one.},
+  url = {https://hal.archives-ouvertes.fr/hal-02573605},
+  doi = {10.4230/LIPIcs.FSCD.2020.37},
+  pdf = {https://hal.archives-ouvertes.fr/hal-02573605/file/article.pdf}
+}
+</pre>
+
+<a name="DBLP:phd/hal/Stolze19"></a><pre>
+@phdthesis{<a href="publications.html#DBLP:phd/hal/Stolze19">DBLP:phd/hal/Stolze19</a>,
+  author = {Claude Stolze},
+  title = {Combining union, intersection and dependent types in an explicitly
+               typed lambda-calculus. (Types union, intersection, et d{\'{e}}pendants
+               dans le lambda-calcul explicitement typ{\'{e}})},
+  school = {University of C{\^{o}}te d'Azur, Nice, France},
+  year = {2019},
+  url = {https://tel.archives-ouvertes.fr/tel-02406953},
+  pdf = {https://hal.archives-ouvertes.fr/tel-02406953/file/2019AZUR4104.pdf}
+}
+</pre>
+
+<a name="festschrift18"></a><pre>
+@inproceedings{<a href="publications.html#festschrift18">festschrift18</a>,
+  author = {Luigi Liquori and Claude Stolze},
+  title = {{The Delta-calculus: Syntax and Types}},
+  booktitle = {4th International Conference on Formal Structures for Computation and Deduction, FSCD 2019},
+  pages = {28:1--28:20},
+  year = {2019},
+  month = jun,
+  abstract = {We present the Delta-calculus, an explicitly typed lambda-calculus with strong pairs, projections and explicit type coercions. The calculus can be parametrized with different intersection type theories T, e.g. the Coppo-Dezani, the Coppo-Dezani-Sall\'e, the Coppo-Dezani-Venneri and the Barendregt-Coppo-Dezani ones, producing a family of Delta-calculi with related intersection type systems. We prove the main properties like Church-Rosser, unicity of type, subject reduction, strong normalization, decidability of type checking and type reconstruction. We state the relationship between the intersection type assignment systems \`a la Curry and the corresponding intersection type systems \`a la Church by means of an essence function translating an explicitly typed Delta-term into a pure lambda-term one. We finally translate a Delta-term with type coercions into an equivalent one without them; the translation is proved to be coherent because its essence is the identity. The generic Delta-calculus can be parametrized to take into account other intersection type theories as the ones in the Barendregt et al. book.},
+  url = {https://hal.inria.fr/hal-01754707},
+  pdf = {https://hal.archives-ouvertes.fr/hal-01963662/file/delta-calculus.pdf},
+  organization = {Schloss Dagstuhl-Leibniz-Zentrum fuer Informatik}
+}
+</pre>
+
+<a name="csl18"></a><pre>
+@inproceedings{<a href="publications.html#csl18">csl18</a>,
+  author = {Furio Honsell and Luigi Liquori and Ivan Scagnetto and Claude Stolze},
+  title = {{The Delta-framework}},
+  booktitle = {38th IARCS Annual Conference on Foundations of Software Technology and Theoretical Computer Science, FSTTCS 2018},
+  pages = {37:1--37:21},
+  year = {2018},
+  month = dec,
+  abstract = {We introduce a dependent-type theory $\Delta$-framework, LF-$\Delta$ , based on the Edinburgh Logical Framework LF, extended with the strong proof-functional connectives intersection, union, and relevant implication. Proof-functional connectives take into account the shape of logical proofs, thus allowing the user to reflect polymorphic features of proofs in formulae. This is in contrast to classical and intuitionistic connectives where the meaning of a compound formula is dependent only on the truth value or the provability of its subformulae. Both Logical Frameworks and Proof Functional Logics consider proofs as first class citizens albeit differently. The former mention proofs explicitly, while the latter mention proofs implicitly. Their combination therefore opens up new possibilites of formal reasoning on proof-theoretic semantics. We study the metatheory of LF-$\Delta$ and provide various examples of applications. Moreover, we discuss a prototype implementation of a type checker and a refiner allowing the user to accelerate and possibly automate, the proof development process. This proof-functional type theory can be plugged in existing common proof assistants.},
+  url = {https://hal.archives-ouvertes.fr/hal-01701934},
+  pdf = {https://hal.archives-ouvertes.fr/hal-01701934/file/Delta.pdf},
+  organization = {Schloss Dagstuhl-Leibniz-Zentrum fuer Informatik}
+}
+</pre>
+
+<a name="ttcs17"></a><pre>
+@inproceedings{<a href="publications.html#ttcs17">ttcs17</a>,
+  author = {Luigi Liquori and Claude Stolze},
+  title = {{A Decidable Subtyping Logic for Intersection and Union Types}},
+  booktitle = {2nd International Conference on Topics in Theoretical Computer Science, TTCS 2017},
+  pages = {74--90},
+  year = {2017},
+  month = sep,
+  abstract = {Using Curry-Howard isomorphism, we extend the typed lambda-calculus with intersection and union types, and its corresponding proof-functional logic, previously defined by the authors, with subtyping and explicit coercions.We show the extension of the lambda-calculus to be isomorphic to the Barbanera-Dezani-de'Liguoro type assignment system and we provide a sound interpretation of the proof-functional logic with the NJ($\beta$) logic, using Mints' realizers.We finally present a sound and complete algorithm for subtyping in presence of intersection and union types. The algorithm is conceived to work for the (sub)type theory $\Xi$.},
+  url = {https://hal.inria.fr/hal-01760641},
+  doi = {10.1007/978-3-319-68953-1\_7},
+  pdf = {https://hal.inria.fr/hal-01760641/file/440117_1_En_7_Chapter.pdf},
+  organization = {Springer}
+}
+</pre>
+
+<a name="lfmtp17"></a><pre>
+@inproceedings{<a href="publications.html#lfmtp17">lfmtp17</a>,
+  author = {Claude Stolze and Luigi Liquori and Furio Honsell and Ivan Scagnetto},
+  title = {{Towards a Logical Framework with Intersection and Union Types}},
+  booktitle = {11th International Workshop on Logical Frameworks and Meta-languages, LFMTP 2017},
+  pages = {1--9},
+  year = {2017},
+  month = sep,
+  abstract = {We present an ongoing implementation of a dependent-type theory ($\Delta$-framework) based on the Edinburgh Logical Framework LF, extended with Proof-functional logical connectives such as intersection , union, and strong (or minimal relevant) implication. Proof-functional connectives take into account the shape of logical proofs, thus allowing to reflect polymorphic features of proofs in formulae. This is in contrast to classical Truth-functional connec-tives where the meaning of a compound formula is only dependent on the truth value of its subformulas. Both Logical Frameworks and proof functional logics consider proofs as first class citizens. But they do it differently namely, explicitly in the former while implicitly in the latter. Their combination opens up new possibilites of formal reasoning on proof-theoretic semantics. We provide some examples in the extended type theory and we outline a type checker. The theory of the system is under investigation. Once validated in vitro, the proof-functional type theory can be successfully plugged in existing truth-functional proof assistants.},
+  url = {https://hal.inria.fr/hal-01534035},
+  pdf = {https://hal.inria.fr/hal-01534035/file/paper-sigconf.pdf},
+  organization = {ACM}
+}
+</pre>
+
+<a name="decidablefull"></a><pre>
+@techreport{<a href="publications.html#decidablefull">decidablefull</a>,
+  author = {Luigi Liquori and Claude Stolze},
+  title = {{A Decidable Subtyping Logic for Intersection and Union Types (full version)}},
+  type = {Research Report},
+  institution = {Inria},
+  year = {2017},
+  month = mar,
+  abstract = { Proof-functional logical connectives allow reasoning about the structure of logical proofs, in this way giving to the latter the status of first-class objects. This is in contrast to classical truth-functional connectives where the meaning of a compound formula is dependent only on the truth value of its subformulas. We present a proof-functional logic and we give a semantics using Mints' realizers accounting for intersection types, union types, and subtyping. The semantics interprets the type $\omega$ as the set universe, the $\rightarrow$ type as a function space, the $\wedge$ and $\vee$ types as set intersection and set union, respectively, and the subtype relation as a subset operator. Using the proof-as-types and terms-as-propositions paradigms, we extend the typed calculus previously defined by the authors with a decidable subtyping relation and we show this calculus to be isomorphic to the Barbanera-Dezani-Ciancaglini-de'Liguoro type assignment system. A subtyping algorithm is presented and proved to be sound and complete. Hindley gave a subtyping algorithm for intersection types but, as far as we know, there is no system in the literature also including union types.},
+  url = {https://hal.inria.fr/hal-01488428},
+  pdf = {https://hal.inria.fr/hal-01488428/file/paper.pdf}
+}
+</pre>
+
+<a name="aplas16"></a><pre>
+@inproceedings{<a href="publications.html#aplas16">aplas16</a>,
+  author = {Daniel J. Dougherty and Ugo de'Liguoro and Luigi
+                  Liquori and Claude Stolze},
+  title = {{A Realizability Interpretation for Intersection and
+                  Union Types}},
+  booktitle = {Programming Languages and Systems - 14th Asian
+                  Symposium, APLAS 2016},
+  pages = {187--205},
+  year = 2016,
+  month = oct,
+  abstract = { {Proof-functional} logical connectives allow
+                  reasoning about the structure of logical proofs, in
+                  this way giving to the latter the status of
+                  {first-class} objects. This is in contrast to
+                  classical {truth-functional} connectives where
+                  the meaning of a compound formula is dependent only
+                  on the truth value of its subformulas.  In this
+                  paper we present a typed lambda calculus, enriched
+                  with products, coproducts, and a related
+                  proof-functional logic. This calculus, directly
+                  derived from a typed calculus previously defined by
+                  two of the current authors, has been proved
+                  isomorphic to the well-known
+                  Barbanera-Dezani-Ciancaglini-de'Liguoro type
+                  assignment system. We present a logic L
+                  featuring two proof-functional connectives, namely
+                  strong conjunction and strong disjunction.  We prove
+                  the typed calculus to be isomorphic to the logic
+                  L and we give a realizability semantics
+                  using {Mints' realizers} and a
+                  completeness theorem.  A prototype implementation is
+                  also described.  },
+  url = {https://hal.inria.fr/hal-01317213},
+  doi = {10.1007/978-3-319-47958-3_11},
+  pdf = {https://hal.inria.fr/hal-01317213/file/0-paper.pdf},
+  organization = {Springer}
+}
+</pre>
+
+<hr><p><em>This file was generated by
+<a href="http://www.lri.fr/~filliatr/bibtex2html/">bibtex2html</a> 1.98.</em></p>
+</body>
+</html>
